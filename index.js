@@ -19,3 +19,6 @@ document.addEventListener('mousemove', function(e) {
     cursor.style.left = `${e.clientX - 250}px`;
     cursor.style.top = `${e.clientY - 250}px`; 
 });
+
+
+
