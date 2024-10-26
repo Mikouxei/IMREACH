@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* -------------------------- BODY -------------------------- */
+body {
+    height: 100vh;
+    background-color: rgb(1, 21, 35);
+    background-image:
+        linear-gradient(-90deg, transparent 99%, rgba(18, 49, 200, 0.223) 1%), 
+        linear-gradient(0deg, transparent 99%, rgba(18, 49, 200, 0.223) 1%);
+    background-size: 5em 5em;
+    background-position: center;
+}
+/* -------------------------- HEADER -------------------------- */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5%;
+    transition: all .5s ease;
+}
+
+/* -------------------------- IMREACH LOGO -------------------------- */
+.logo {
+    height: 40px;
+    display: flex;
+    user-select: none;
+}
+/* -------------------------- URS SEAL -------------------------- */
+.seal {
+    height: 48px;
+    display: flex;
+    user-select: none;
+}
+
+/* -------------------------- NAVIGATION LIST -------------------------- */
+.navlist {
+    display: flex;
+    list-style: none;
+    user-select: none;
+}
+
+.navlist a {
+    color: rgb(224, 235, 243);
+    text-decoration: none;
+    margin: 0 30px;
+    transition: all .50s ease;
+}
+
+.navlist a:hover {
+    color: rgb(27, 149, 235);
+}
+
+.navlist a.active {
+    color: rgb(27, 149, 235);
+}
+
+/* -------------------------- MENU ICON -------------------------- */
+.menu {
+    display: inline-block;
+    cursor: pointer;
+    z-index: 101;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 20px;
+    height: 2px;
+    background-color: rgb(27, 149, 235);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+.change .bar1 {
+    transform: translateY(8px) rotate(-45deg);
+}
+  
+.change .bar2 {opacity: 0;}
+  
+.change .bar3 {
+    transform: translateY(-8px) rotate(45deg);
+}
+
+/* -------------------------- HOME PAGE CONTENT -------------------------- */
+
+.main-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7vw;
+    position: relative;
+    margin: 16vw auto; 
+    user-select: none;
+}
+
+.imreach {
+    position: relative;
+    color: rgb(224, 235, 243);
+    text-shadow: 0 0 10px rgba(224, 235, 243, 0.8), 0 0 20px rgba(224, 235, 243, 0.5);
+    z-index: 2;
+}
+
+.c {
+    position: absolute;
+    right: 26vw;
+    z-index: 1; 
+    color: rgb(0, 97, 182);
+    text-shadow: 0 0 10px rgb(0, 97, 182, 0.8), 0 0 20px rgb(0, 97, 182, 0.5);
+}
+
+/* -------------------------- SUB-TEXT INFINITE LOOP (HOME PAGE) -------------------------- */
+
+.loop {
+    font-size: 1vw;
+    padding-block: .8vw;
+    border-block: .1vw solid;
+    overflow: hidden;
+    user-select: none;
+    display: flex;
+    margin-top: -18vw;
+    margin-left: 17.8vw;
+    margin-right: 18vw;
+    gap: 1rem;
+    color: rgb(224, 235, 243);
+    z-index: 100;
+}
+
+.loop ul {
+    list-style: none;
+    flex-shrink: 0;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    animation: scroll 20s linear infinite;
+    color: rgb(224, 235, 243);
+}
+
+@keyframes scroll {
+    to {
+        transform: translateX(calc(-100% - 15px))
+    }
+}
+
+
+/* -------------------------- GRADIENT MOUSE POINTER -------------------------- */
+.gradient {
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    background: radial-gradient(circle, rgb(2, 120, 223) 10%, rgb(0, 42, 255));
+    filter: blur(250px);
+    transition: all 250ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* -------------------------- MENU ICON MEDIA QUERY -------------------------- */
+@media (max-width: 1404px) {
+    .menu {
+        display: initial;
+        transition: all;
+    }
+    .seal{
+        display: none;
+    }
+    .navlist {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        background-color: rgba(16, 45, 66, 0.43);
+        border-radius: 10px;
+        top: 100%;
+        right: 2.3vw;
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        visibility: hidden;
+        transition: opacity 0.5s ease, max-height 0.5s ease, visibility 0.5s ease;
+        margin-top: 10px;
+        backdrop-filter: blur(10px);
+    }
+    
+    .navlist.active {
+        opacity: 1;
+        max-height: 500px;
+        visibility: visible;
+    }
+    
+    .navlist a {
+        display: block;
+        padding: 0.5rem;
+        margin: 1rem;
+        border-left: 2px solid rgb(27, 149, 235);
+        
+    }
+
+}
+
+/* -------------------------- HEADER (FLOAT) -------------------------- */
+header.float {
+    position: fixed;
+    height: 70px;
+    width: 92%;
+    background-color: rgba(16, 45, 66, 0.43);
+    border-radius: 50px;
+    display: flex;
+    white-space: nowrap; 
+    padding: 0 30px;
+    margin: 0 auto; 
+    top: 20px;
+    left: 0;
+    right: 0;
+    transition: all 0.5s ease; 
+    backdrop-filter: blur(10px);
+}
