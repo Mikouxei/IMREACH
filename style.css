@@ -4,7 +4,12 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+html {
+    scroll-behavior: smooth;
+}
 /* -------------------------- BODY -------------------------- */
+
 body {
     height: 100vh;
     background-color: rgb(1, 21, 35);
@@ -96,9 +101,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 7vw;
+    font-size: 9.5vw;
     position: relative;
-    margin: 16vw auto; 
+    top: 15vw; 
     user-select: none;
 }
 
@@ -111,7 +116,7 @@ header {
 
 .c {
     position: absolute;
-    right: 26vw;
+    right: 26.3vw;
     z-index: 1; 
     color: rgb(0, 97, 182);
     text-shadow: 0 0 10px rgb(0, 97, 182, 0.8), 0 0 20px rgb(0, 97, 182, 0.5);
@@ -126,8 +131,8 @@ header {
     overflow: hidden;
     user-select: none;
     display: flex;
-    margin-top: -18vw;
-    margin-left: 17.8vw;
+    margin-top: 13vw;
+    margin-left: 17.6vw;
     margin-right: 18vw;
     gap: 1rem;
     color: rgb(224, 235, 243);
