@@ -1,1 +1,93 @@
-test
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #d3eaf2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2b7a3d;
+            margin-bottom: 20px;
+        }
+        .fees {
+            display: flex;
+            justify-content: center;
+        }
+        .fee-box {
+            background-color: #b3d9ff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 0 10px;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+        .fee-box::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, #ff6ec4, #7873f5, #4ade80, #facc15);
+            background-size: 400% 400%;
+            border-radius: 12px;
+            z-index: -1;
+            animation: gradient 5s ease infinite;
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .fee-box:hover {
+            transform: perspective(1000px) rotateX(10deg) rotateY(-10deg);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .fee-box h2 {
+            font-size: 20px;
+            color: #1a4d8f;
+            margin: 0;
+        }
+        .fee-box .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #d9534f;
+            margin: 10px 0;
+        }
+        .fee-box p {
+            font-size: 14px;
+            color: #1a4d8f;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">CONFERENCE FEES</div>
+        <div class="fees">
+            <div class="fee-box">
+                <h2>Local Participants</h2>
+                <div class="price">Php 1,200.00</div>
+                <p>*inclusive of<br>per pax<br>registration, e-<br>souvenir<br>program,<br>conference<br>abstract<br>proceedings<br>and other<br>incidental<br>expenses.</p>
+            </div>
+            <div class="fee-box">
+                <h2>Foreign Participants</h2>
+                <div class="price">Php 3,000.00</div>
+                <p>*inclusive of<br>per pax<br>registration, e-<br>souvenir<br>program,<br>conference<br>abstract<br>proceedings<br>and other<br>incidental<br>expenses.</p>
+            </div>
+        </div>
+    </div>
+</body>
+  </html>
