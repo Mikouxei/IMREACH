@@ -1,1 +1,62 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMREACH Conference 2024</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>IMREACH 2024</h1>
+    <h2>International Multidisciplinary Research and Extension Advocacy Conference for Champions of Change</h2>
+    <p><strong>October 10-11, 2024</strong> | Via Zoom</p>
+    
+    <div class="card">
+      <h3>About the Conference</h3>
+      <p>
+        The University of Rizal System is dedicated to internationalizing its research and extension operations, aiming to make scholarly outputs and community development outcomes accessible globally. IMREACH 2024 serves as a venue for researchers and practitioners to share impactful research and best practices for empowered communities.
+      </p>
+    </div>
+    
+    <!-- Conference Objectives -->
+    <h3>Conference Objectives</h3>
+    
+    <button class="collapsible">1. Highlight the significance of internationalized research and extension services</button>
+    <div class="content">
+      <p>This objective emphasizes the importance of scaling up efforts to bring research and extension services to an international platform, enhancing global accessibility and influence.</p>
+    </div>
+    
+    <button class="collapsible">2. Platform for Service Learning</button>
+    <div class="content">
+      <p>IMREACH 2024 provides a platform for presenting qualified research and extension papers, fostering opportunities for experiential learning and practical application.</p>
+    </div>
+    
+    <button class="collapsible">3. Address Global Sustainability Challenges</button>
+    <div class="content">
+      <p>Research and extension are positioned as tools for tackling global sustainability challenges, working towards a more progressive and sustainable society.</p>
+    </div>
+    
+    <button class="collapsible">4. Promote Inter/Multi-disciplinary Approaches</button>
+    <div class="content">
+      <p>The conference encourages collaboration across disciplines, enriching research and extension efforts with a diversity of perspectives and expertise.</p>
+    </div>
+  </div>
+
+  <script>
+    // Collapsible functionality
+    const coll = document.querySelectorAll(".collapsible");
+    coll.forEach(button => {
+      button.addEventListener("click", function() {
+        this.classList.toggle("active");
+        const content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
