@@ -6,12 +6,13 @@ window.addEventListener("scroll", function() {
   header.classList.toggle("float", window.scrollY > 80);
 });
 
-/* -------------------------- MENU ICON / NAVIGATION LIST -------------------------- */
+/* -------------------------- MENU ICON -------------------------- */
 function xmenu(x) {
   x.classList.toggle("change");
   document.querySelector(".navlist").classList.toggle("active");
 }
 
+/* -------------------------- NAVIGATION LINK-------------------------- */
 const navLinks = document.querySelectorAll(".navlist a");
 
 window.addEventListener("scroll", () => {
@@ -36,8 +37,8 @@ window.addEventListener("scroll", () => {
 const cursor = document.querySelector('.gradient');
 
 document.addEventListener('mousemove', function(e) {
-    cursor.style.left = `${e.clientX - 250}px`;
-    cursor.style.top = `${e.clientY - 250}px`; 
+  cursor.style.left = `${e.clientX - 250}px`;
+  cursor.style.top = `${e.clientY - 250}px`; 
 });
 
 
