@@ -10,6 +10,7 @@ html {
 }
 
 /* -------------------------- BODY -------------------------- */
+
 body {
     min-height: 100vh;
     background-color: rgb(1, 21, 35);
@@ -21,8 +22,26 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     cursor: none;
+}
+
+/* -------------------------- TRANSITION -------------------------- */
+
+@keyframes appear {
+    from {
+        opacity:0;
+        scale: 0.4;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.transition {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 /* -------------------------- CUSTOM CURSOR -------------------------- */
@@ -153,28 +172,6 @@ header {
     align-items: center;
     justify-content: center;
 }
-
-/* .home-divider-bottom {
-    position: absolute;
-    bottom: -115px;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    z-index: 10;
-    
-}
-
-.home-divider-bottom svg {
-    position: relative;
-    display: block;
-    width: calc(275% + 1.3px);
-    height: 149px;
-}
-
-.home-divider-bottom .shape-fill {
-    fill: #f4f3f2;
-} */
 
 .home-title {
     display: flex;
@@ -582,7 +579,7 @@ header {
     border-radius: 40px;
     padding: 5px 12px;
     user-select: none;
- 
+    z-index: 10;
 }
 
 .theme-loop {
@@ -1872,3 +1869,6 @@ header {
     background-color: rgb(255, 255, 255);
     z-index: 100;
 } */
+
+
+/* -------------------------- TRANSITIONS -------------------------- */
