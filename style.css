@@ -1154,6 +1154,13 @@ header {
     background-color: rgb(1, 21, 35, 0.625);
     position: relative;
     z-index: 1; 
+    transition: all 0.5s;
+}
+
+.abstract-container:hover {
+    border: 1px solid rgb(0, 208, 255);
+    box-shadow: 0 0 10px rgba(0, 208, 255, 0.8);
+    transform: scale(1.02);
 }
 
 .abstract-instruction {
@@ -1170,7 +1177,7 @@ header {
 }
 
 .abstract-instruction li {
-    margin-bottom: 25px;
+    margin-bottom: 24.8px;
 }
 
 .button-wrapper {
@@ -1251,6 +1258,13 @@ header {
     margin: 10px;
     border-radius: 30px;
     background-color: rgba(1, 21, 35, 0.625);
+    transition: all 0.5s;
+}
+
+.report-container:hover {
+    border: 1px solid rgb(0, 208, 255);
+    box-shadow: 0 0 10px rgba(0, 208, 255, 0.8);
+    transform: scale(1.02);
 }
 
 .report-instruction {
@@ -1281,6 +1295,13 @@ header {
     margin: 10px;
     border-radius: 30px;
     background-color: rgb(1, 21, 35, 0.625);
+    transition: all 0.5s;
+}
+
+.presentation-container:hover {
+    border: 1px solid rgb(0, 208, 255);
+    box-shadow: 0 0 10px rgba(0, 208, 255, 0.8);
+    transform: scale(1.02);
 }
 
 .presentation-instruction {
@@ -1616,7 +1637,8 @@ header {
 
 .extension-abstract-container:hover {
     border: 1px solid rgb(0, 208, 255);
-    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 208, 255, 0.8);
+    transform: scale(1.02);
 }
 
 .extension-abstract-instruction {
@@ -1720,7 +1742,8 @@ header {
 
 .extension-report-container:hover {
     border: 1px solid rgb(0, 208, 255);
-    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 208, 255, 0.8);
+    transform: scale(1.02);
 }
 
 .extension-report-instruction {
@@ -1756,7 +1779,8 @@ header {
 
 .extension-presentation-container:hover {
     border: 1px solid rgb(0, 208, 255);
-    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 208, 255, 0.8);
+    transform: scale(1.02);
 }
 
 .extension-presentation-instruction {
