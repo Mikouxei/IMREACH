@@ -1970,7 +1970,6 @@ header {
     width: 85vw;
     display: flex;
     flex-direction: column;
-    margin-bottom: 100px;
 }
 
 .collaborators-title {
@@ -2146,13 +2145,182 @@ header {
     }
 }
 
-/* -------------------------- FOOTER -------------------------- */
+/* -------------------------- E-POSTER -------------------------- */
 
 .e-poster {
     min-height: 100vh;
     display: flex;
+    justify-content: center;
+    z-index: 10;
+    padding-top: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    user-select: none;
+}
+
+.eposter-container {
+    display: flex;
+    width: 85vw;
+    flex-direction: column;
+    z-index: 10;
+    border: 1px solid rgb(2, 120, 223);
+    border-radius: 40px;
+    background-color: rgba(1, 21, 35, 0.516);
+}
+
+.eposter-title-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.eposter-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 40px 0 40px;
+    color: #f4f3f2;
+    font-size: 60px;
+    text-align: center;
+    line-height: 60px;
+    z-index: 10;
+}
+
+.eposter-sub-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f4f3f280;
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+.timeline-container {
+    width: 100%;
+    display: flex;
+    padding: 100px 0;
+}
+
+.timeline {
+    /* width: 100%; */
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
 }
   
+.timeline ul {
+    list-style: none;
+}
+
+.timeline ul li {
+    padding: 20px;
+    background: linear-gradient(135deg, #0d1120 0%, #022554 43%, #0d1120 100%);
+    box-shadow: 0px 1rem 1.5rem -0.9rem #000000e1;
+    border: 1px solid rgb(2, 120, 223);
+    color: #f4f3f2;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+}
+
+.timeline ul li:hover {
+    border: 1px solid rgb(2, 120, 223);
+    box-shadow: 0 0 20px rgb(2, 120, 223, 0.8);
+}
+
+.timeline ul li:last-child {
+    margin-bottom: 0;
+}
+
+.number {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    padding: 20px 0 0 20px;
+}
+
+.text {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+    padding: 0 20px 20px 20px;
+    text-align: justify;
+}
+
+@media (min-width: 850px) {
+    .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 100%;
+    background-color: #eeeeee;
+}
+    
+.timeline ul li {
+    width: 50%;
+    position: relative;
+    margin-bottom: 50px;
+}
+    
+.timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+    border-radius: 20px 0px 20px 20px;
+}
+    
+.timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+    border-radius: 0px 20px 20px 20px;
+}
+    
+.timeline ul li::before {
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #f4f3f2;
+    top: 0px;
+}
+    
+.timeline ul li:nth-child(odd)::before {
+    transform: translate(50%, -50%);
+    right: -30px;
+}
+    
+.timeline ul li:nth-child(even)::before {
+    transform: translate(-50%, -50%);
+    left: -30px;
+}
+    
+.timeline ul li:hover::before {
+    background-color: rgb(0, 136, 255);
+}
+}
+
+@media (max-width: 900px) {
+    .eposter-title {
+        font-size: 50px;
+        padding: 40px 40px 0 40px;
+    }
+}
+
+@media (max-width: 650px) {
+    .eposter-sub-title {
+        font-size: 25px;
+        padding: 0 40px 0 40px;
+        text-align: center;
+    }
+}
+
 
 /* -------------------------- FOOTER -------------------------- */
 
@@ -2163,5 +2331,3 @@ header {
     z-index: 100;
 } */
 
-
-/* -------------------------- TRANSITIONS -------------------------- */
