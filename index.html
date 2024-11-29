@@ -21,7 +21,6 @@
 </head>
 
 <body>
-    <div class="scroll">
     <!-------------------------- CUSTOM CURSOR -------------------------->
     <div class="cursor-dot" data-cursor-dot></div>
     <div class="cursor-outline" data-cursor-outline></div>
@@ -57,9 +56,6 @@
 
         <!-------------------------- GRADIENT MOUSE POINTER -------------------------->
         <div class="gradient"></div>
-
-        <!-------------------------- LINKED JAVASCRIPT -------------------------->
-        <script src="main.js"></script>
 
         <!-------------------------- HOME PAGE CONTENT -------------------------->
         <div class="home-title">
@@ -119,7 +115,7 @@
     <!-------------------------- || ABOUT PAGE || -------------------------->
     <section id="about" class="about">
 
-        <div class="urs-giants"><img src="img/urs-giants.png"></div>
+        <!-- <div class="urs-giants"><img src="img/urs-giants.png"></div> -->
         
         <div class="stars">
             <div class="layer"></div>
@@ -283,8 +279,8 @@
             
             <div class="research-wrapper">
                 <div class="thematic-areas">THEMATIC AREAS</div>
-                    <div class="thematic-wrapper">
-                        <div class="thematic-card transition">
+                    <div class="thematic-wrapper transition">
+                        <div class="thematic-card">
                             <div class="text">
                                 <div class="group">GROUP 1</div>
                                 <div class="group-content-wrapper">
@@ -294,7 +290,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="thematic-card transition">
+                        <div class="thematic-card">
                             <div class="text">
                                 <div class="group">GROUP 2</div>
                                 <div class="group-content-wrapper">
@@ -305,7 +301,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="thematic-card transition">
+                        <div class="thematic-card">
                             <div class="text">
                                 <div class="group">GROUP 3</div>
                                 <div class="group-content-wrapper">
@@ -316,7 +312,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="thematic-card transition">
+                        <div class="thematic-card">
                             <div class="text">
                                 <div class="group">GROUP 4</div>
                                 <div class="group-content-wrapper">
@@ -371,8 +367,8 @@
                                 <div class="presentation-text rtext3">Objectives (in bullet form)</div>
                                 <div class="presentation-text rtext4">Conceptual Framework</div>
                                 <div class="presentation-text rtext5">Methodology (by Objective)</div>
-                                <div class="presentation-text rtext6">Implications and Recommendations (in bullet form)</div>
-                                <div class="presentation-text rtext7">Results and Discussions (in bullet form)</div>
+                                <div class="presentation-text rtext6">Results and Discussions (in bullet form)</div>
+                                <div class="presentation-text rtext7">Implications and Recommendations (in bullet form)</div>
                             </div>
                         </div>
                     </div>
@@ -485,15 +481,47 @@
     </section>
 
     <!-------------------------- || COLLABORATING ORGANIZATIONS || -------------------------->
-    <!-- <div id="collaborators" class="collaborators">
+    <section id="collaborators" class="collaborators">
         <div class="collaborators-container">
-
+            <div class="collaborators-title transition">COLLABORATING ORGANIZATIONS</div>
+            <div class="logo-wrapper">
+                <div class="logo-container transition">
+                    <a href="https://www.paase.org/" class="org-logo white">
+                    <img src="img/paase.png">
+                    </a>
+                    <a href="https://www.pemea.org/" class="org-logo blue">
+                    <img src="img/pemea.png">
+                    </a>
+                    <a href="https://www.facebook.com/@PhilEASNet/" class="org-logo white">
+                    <img src="img/phileasnet.png">
+                    </a>
+                    <a class="org-logo blue">
+                    <img src="img/feasmf.png">
+                    </a>
+                    <a href="https://depedcalabarzon.ph/" class="org-logo blue">
+                    <img src="img/deped.png">
+                    </a>
+                    <a href="https://region4a.dost.gov.ph/" class="org-logo white">
+                    <img src="img/dost.png">
+                    </a>
+                    <a href="https://chedcalabarzon.com/" class="org-logo blue">
+                    <img src="img/ched.png">
+                    </a>
+                    <a href="https://ati2.da.gov.ph/ati-4a/content/" class="org-logo white">
+                    <img src="img/fits.png">
+                    </a>
+                </div>
+            </div>
         </div>
-    </div> -->
+    </section>
 
+    <!-------------------------- || E-POSTER || -------------------------->
 
-
-
+    <section id="e-poster" class="e-poster">
+        <div class="eposter-container">
+        </div>
+    </section>
+    
     <!-------------------------- || FOOTER || -------------------------->
     <!-- <div class="footer">
         <ul class="footlist">
@@ -501,7 +529,9 @@
             <li><a href="#" class="policy">Lorem ipsum dolor sit amet.</a></li>
         </ul>
     </div> -->
-</div>
+
+    <!-------------------------- LINKED JAVASCRIPT -------------------------->
+    <script src="main.js"></script>
 </body>
 
 </html>
