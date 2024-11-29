@@ -52,10 +52,7 @@ window.addEventListener("mousemove", function (e) {
 
   cursorDot.style.left = posX + "px";
   cursorDot.style.top = posY + "px";
-
-  // cursorOutline.style.left = posX + "px";
-  // cursorOutline.style.top = posY + "px";
-
+  
   cursorOutline.animate({
     left: posX + "px",
     top: posY + "px"
