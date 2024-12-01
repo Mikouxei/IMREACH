@@ -305,26 +305,7 @@ header {
     backdrop-filter: blur(10px);
 }
 
-/* -------------------------- INSTITUTIONAL PHILOSOPHY PAGE -------------------------- */
-
-/* .institutional-philosophy {
-    display: flex;
-    min-height: 100vh;
-    background-color: #efefef;
-    margin-top: 49px;
-    z-index: 10;
-} */
-
-
-
 /* -------------------------- ABOUT PAGE -------------------------- */
-
-/* .urs-giants {
-    position: absolute;
-    height: 200px;
-    margin-bottom: 1600px;
-    z-index: 10;
-} */
 
 .about {
     min-height: 100vh;
@@ -2163,9 +2144,9 @@ header {
     width: 85vw;
     flex-direction: column;
     z-index: 10;
-    border: 1px solid rgb(2, 120, 223);
+    /* border: 1px solid rgb(2, 120, 223);
     border-radius: 40px;
-    background-color: rgba(1, 21, 35, 0.516);
+    background-color: rgba(1, 21, 35, 0.516); */
 }
 
 .eposter-title-wrapper {
@@ -2322,12 +2303,265 @@ header {
 }
 
 
+/* -------------------------- TEAM -------------------------- */
+
+.team {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    user-select: none;
+}
+
+.team-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 85vw;
+}
+
+.team-title {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    margin-bottom: 20px;
+    color: #f4f3f2;
+    font-size: 60px;
+    text-align: center;
+    line-height: 60px;
+    z-index: 10;
+}
+
+.profile-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+.profile-card {
+    width: 280px;
+    height: 350px;
+    background: #07182E;
+    border: 1px solid rgb(2, 120, 223);
+    border-radius: 20px;
+    text-align: center;
+    color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    margin: 20px;
+    transition: all 0.5s;
+}
+  
+.profile-photo {
+    display: flex;
+    align-self: center;
+    margin-top: 50px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    font-size: 11px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    z-index: 10;
+    background: linear-gradient(135deg, #0d1120 0%, #022554 43%, #0d1120 100%);
+}
+  
+p {
+    opacity: 0;
+    transition: all 0.5s;
+}
+  
+.name {
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.role {
+    font-size: 12px;
+    padding-bottom: 20px;
+    color: #f4f3f286;
+    line-height: 15px;
+}
+
+.icon {
+    padding: 0 5px;
+    text-decoration: none;
+    cursor: none;
+}
+
+.facebook-icon {
+    height: 25px;
+    transition: all 0.5s;
+}
+
+.github-icon {
+    height: 25px;
+    transition: all 0.5s;
+}
+
+.profile-card:hover {
+    transform: translateY(-20px);
+}
+  
+.profile-card:hover .profile-photo {
+    transform: scale(1.1);
+    border: 1px solid #f4f3f2;
+}
+  
+.profile-card:hover p {
+    opacity: 1;
+}
+
+.facebook-icon:hover, .github-icon:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 1000px) {
+    .profile-container {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media (max-width: 700px) {
+    .profile-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
 /* -------------------------- FOOTER -------------------------- */
 
-/* .footer {
+.footer {
     height: 20vh;
-    margin-top: 20vh;
-    background-color: rgb(255, 255, 255);
+    margin-top: 200px;
     z-index: 100;
-} */
+    user-select: none;
+}
 
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background: linear-gradient(to bottom, rgba(7, 24, 46, 0.01), rgb(0, 0, 0));
+}
+
+.logos {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 20px;
+    padding-top: 50px;
+}
+
+.imreach-logo, .urs-text-logo {
+    height: 50px;
+}
+
+.sections {
+    display: flex;
+    gap: 40px;
+    margin: 20px 20px 10px 20px;
+    list-style: none;
+    font-size: 18px;
+    flex-wrap: wrap;
+    cursor: none;
+    justify-content: center;
+}
+
+.sections li {
+    transition: all 0.5s;
+    padding: 1px;
+}
+
+.sections li a {
+    text-decoration: none;
+    color: #f4f3f2;
+    cursor: none;
+}
+
+.sections li:hover {
+    transform: translateY(-10px);
+}
+
+.sections li:hover a{
+    color:#00a4ef;
+}
+
+.media-icons {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding: 20px;
+}
+
+.fb-icon:hover, .website-icon:hover, .youtube-icon:hover {
+    transform: scale(1.3);
+    color: #00a4ef;
+}
+
+.media-icons li a {
+    text-decoration: none;
+    color: #f4f3f2;
+}
+
+.fb-icon {
+    height: 35px;
+    border: 1px solid #f4f3f2;
+    padding: 7px;
+    border-radius: 50%;
+    transition: 0.5s ease;
+    cursor: none;
+}
+
+.website-icon {
+    height: 35px;
+    border: 1px solid #f4f3f2;
+    padding: 7px;
+    border-radius: 50%;
+    transition: 0.5s ease;
+    cursor: none;
+}
+
+.youtube-icon {
+    height: 35px;
+    border: 1px solid #f4f3f2;
+    padding: 7px;
+    border-radius: 50%;
+    transition: 0.5s ease;
+    cursor: none;
+}
+
+.paragraph {
+    color: #f4f3f296;
+    justify-content: center;
+    text-align: center;
+    width: 620px;
+    font-size: 16px;
+}
+
+.paragraph2 {
+    color: #f4f3f256;
+    font-size: 12px;
+    padding: 20px;
+}
+
+@media (max-width: 700px) {
+    .paragraph {
+        width: 400px;
+    }
+}
+
+@media (max-width: 600px) {
+    .logos {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .sections {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
