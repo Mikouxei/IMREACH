@@ -93,7 +93,7 @@ header {
 }
 
 .logo:hover {
-    transform: scale(1.1); /* Zoom in */
+    transform: scale(1.1);
 }
 
 /* -------------------------- URS SEAL -------------------------- */
@@ -106,7 +106,7 @@ header {
 }
 
 .seal:hover {
-    transform: scale(1.1); /* Zoom in */
+    transform: scale(1.1);
 }
 
 
@@ -2142,9 +2142,6 @@ header {
     width: 85vw;
     flex-direction: column;
     z-index: 10;
-    /* border: 1px solid rgb(2, 120, 223);
-    border-radius: 40px;
-    background-color: rgba(1, 21, 35, 0.516); */
 }
 
 .eposter-title-wrapper {
@@ -2181,7 +2178,6 @@ header {
 }
 
 .timeline {
-    /* width: 100%; */
     width: 85%;
     height: auto;
     margin: 0 auto;
