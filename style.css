@@ -253,7 +253,14 @@ header {
     .menu {
         display: initial;
         transition: all;
+        cursor: none;
+        transition: 0.5s ease;
     }
+
+    .menu:hover {
+        transform: scale(1.2);
+    }
+    
     .seal{
         display: none;
     }
@@ -267,7 +274,7 @@ header {
         top: 100%;
         right: 5vw;
         opacity: 0;
-        max-height: 0;  
+        max-height: 0;
         overflow: hidden;
         transition: opacity 0.5s ease, max-height 0.5s ease, visibility 0.5s ease;
         margin-top: 10px;
