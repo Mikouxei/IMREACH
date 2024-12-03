@@ -37,8 +37,8 @@ window.addEventListener("scroll", () => {
 const cursor = document.querySelector('.gradient');
 
 document.addEventListener('mousemove', function(e) {
-  cursor.style.left = `${e.clientX - 250}px`;
-  cursor.style.top = `${e.clientY - 250}px`; 
+  cursor.style.left = (e.clientX - 250) + "px";
+  cursor.style.top = (e.clientY - 250) + "px";
 });
 
 
@@ -47,14 +47,12 @@ const cursorDot = document.querySelector("[data-cursor-dot]");
 const cursorOutline = document.querySelector("[data-cursor-outline]");
 
 window.addEventListener("mousemove", function (e) {
-  const posX = e.clientX;
-  const posY = e.clientY;
 
-  cursorDot.style.left = posX + "px";
-  cursorDot.style.top = posY + "px";
+  cursorDot.style.left = e.clientX + "px";
+  cursorDot.style.top = e.clientY + "px";
   
   cursorOutline.animate({
-    left: posX + "px",
-    top: posY + "px"
+    left: e.clientX + "px",
+    top: e.clientY + "px"
   }, {duration: 500, fill: "forwards"});
 });
