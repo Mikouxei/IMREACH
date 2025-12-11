@@ -193,7 +193,7 @@ header {
 
 .c {
     position: absolute;
-    right: 11.5vw;
+    right: 8.5vw;
     z-index: 1; 
     color: rgb(1, 43, 170);
     text-shadow: 0 0 10px rgb(1, 43, 170, 0.8), 0 0 20px rgb(1, 43, 170, 0.5);
